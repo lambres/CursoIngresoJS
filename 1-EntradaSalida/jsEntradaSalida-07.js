@@ -2,9 +2,8 @@
 Debemos lograr tomar Los numeros por ID ,
 transformarlos a enteros (parseInt),realizar la operación correcta y 
 mostrar el resulto por medio de "ALERT"
-ej.: "la Resta es 750"*/ 
-function sumar()
-{	
+ej.: "la Resta es 750"*/
+function sumar() {
 	//declaro 3 variables
 	let numero1;
 	let numero2;
@@ -15,26 +14,24 @@ function sumar()
 	//asigno el resultado de la operacion suma a la variable resultado
 	resultado = numero1 + numero2
 	//muestro el resultado por medio de la funcion ALERT
-	alert(`La suma es ${resultado}`)	
+	alert(`La suma es ${resultado}`)
 }
 
-function restar()
-{
-		//declaro 3 variables
-		let numero1;
-		let numero2;
-		let resultado;
-		//capturo los valores del formulario html
-		numero1 = parseInt(document.getElementById("txtIdNumeroUno").value);
-		numero2 = parseInt(document.getElementById("txtIdNumeroDos").value);
-		//asigno el resultado de la operacion restar a la variable resultado
-		resultado = numero1 - numero2
-		//muestro el resultado por medio de la funcion ALERT
-		alert(`La resta es ${resultado}`)	
+function restar() {
+	//declaro 3 variables
+	let numero1;
+	let numero2;
+	let resultado;
+	//capturo los valores del formulario html
+	numero1 = parseInt(document.getElementById("txtIdNumeroUno").value);
+	numero2 = parseInt(document.getElementById("txtIdNumeroDos").value);
+	//asigno el resultado de la operacion restar a la variable resultado
+	resultado = numero1 - numero2
+	//muestro el resultado por medio de la funcion ALERT
+	alert(`La resta es ${resultado}`)
 }
 
-function multiplicar()
-{ 
+function multiplicar() {
 	//declaro 3 variables
 	let numero1;
 	let numero2;
@@ -45,11 +42,10 @@ function multiplicar()
 	//asigno el resultado de la operacion multiplicacion a la variable resultado
 	resultado = numero1 * numero2
 	//muestro el resultado por medio de la funcion ALERT
-	alert(`El producto es ${resultado}`)		
+	alert(`El producto es ${resultado}`)
 }
 
-function dividir()
-{
+function dividir() {
 	//declaro 3 variables
 	let numero1;
 	let numero2;
@@ -60,6 +56,6 @@ function dividir()
 	//asigno el resultado de la operacion division a la variable resultado
 	resultado = numero1 / numero2
 	//muestro el resultado por medio de la funcion ALERT
-	alert(`El cociente es ${resultado}`)		
+	alert(`El cociente es ${resultado}`)
 }
 
