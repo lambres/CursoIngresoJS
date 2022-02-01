@@ -12,9 +12,9 @@ function sumar() {
 	numero1 = parseInt(document.getElementById("txtIdNumeroUno").value);
 	numero2 = parseInt(document.getElementById("txtIdNumeroDos").value);
 	//asigno el resultado de la operacion suma a la variable resultado
-	resultado = numero1 + numero2
+	resultado = numero1 + numero2;
 	//muestro el resultado por medio de la funcion ALERT
-	alert(`La suma es ${resultado}`)
+	alert(`La suma es ${resultado}`);
 }
 
 function restar() {
@@ -26,9 +26,9 @@ function restar() {
 	numero1 = parseInt(document.getElementById("txtIdNumeroUno").value);
 	numero2 = parseInt(document.getElementById("txtIdNumeroDos").value);
 	//asigno el resultado de la operacion restar a la variable resultado
-	resultado = numero1 - numero2
+	resultado = numero1 - numero2;
 	//muestro el resultado por medio de la funcion ALERT
-	alert(`La resta es ${resultado}`)
+	alert(`La resta es ${resultado}`);
 }
 
 function multiplicar() {
@@ -40,9 +40,9 @@ function multiplicar() {
 	numero1 = parseInt(document.getElementById("txtIdNumeroUno").value);
 	numero2 = parseInt(document.getElementById("txtIdNumeroDos").value);
 	//asigno el resultado de la operacion multiplicacion a la variable resultado
-	resultado = numero1 * numero2
+	resultado = numero1 * numero2;
 	//muestro el resultado por medio de la funcion ALERT
-	alert(`El producto es ${resultado}`)
+	alert(`El producto es ${resultado}`);
 }
 
 function dividir() {
@@ -54,8 +54,8 @@ function dividir() {
 	numero1 = parseInt(document.getElementById("txtIdNumeroUno").value);
 	numero2 = parseInt(document.getElementById("txtIdNumeroDos").value);
 	//asigno el resultado de la operacion division a la variable resultado
-	resultado = numero1 / numero2
+	resultado = numero1 / numero2;
 	//muestro el resultado por medio de la funcion ALERT
-	alert(`El cociente es ${resultado}`)
+	alert(`El cociente es ${resultado}`);
 }
 
