@@ -38,7 +38,8 @@ function Promedio ()
 }
 function PrecioFinal () 
 {
-    //defino 6 variables, una para cada precio, una para el neto de los articulos, una para el importe del IVA y una para el resultado
+    //defino 6 variables, una para cada precio, una para el neto de los articulos,
+    //una para el impuesto del IVA y una para el precio bruto
 	let importe1;
     let importe2;
     let importe3;

@@ -6,6 +6,11 @@ B.	Al ingresar una temperatura en Centígrados debemos mostrar la temperatura en
 */
 function FahrenheitCentigrados () 
 {
+    /*
+    Ruben Dario Zevallos Lambrescht
+    Division K
+    Ejercicio TP03 parte 1
+    */
     //defino las variables
     let tempF;
     let tempC;
@@ -18,6 +23,11 @@ function FahrenheitCentigrados ()
 
 function CentigradosFahrenheit () 
 {
+    /*
+    Ruben Dario Zevallos Lambrescht
+    Division K
+    Ejercicio TP03 parte 2
+    */
 	   //defino las variables
        let tempF;
        let tempC;
