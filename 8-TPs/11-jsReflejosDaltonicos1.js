@@ -8,16 +8,18 @@ var ColorSecreto;
 var tiempoInicio;
 function comenzar()
 {
+    let ahora;
     let minimo = 1;
     let maximo = 6;
     let nroColor;
+    ahora = new Date().getTime();
     nroColor = Math.round((Math.random() * (maximo - minimo) + minimo));
     switch(nroColor){
         case 1:
             ColorSecreto = "azul";
             break;
         case 2:
-            ColorSecreto = "amrillo";
+            ColorSecreto = "amarillo";
             break;
         case 3:
             ColorSecreto = "marron";
@@ -33,7 +35,8 @@ function comenzar()
             break;
                                                                             
     }
-	
+	document.getElementById("txtIdColorElegido").value = ColorSecreto;
+    tiempoInicio = setTimeout(Responder,4000,ColorSecreto) 
 
 }//FIN DE LA FUNCIÓN
 function Responder(colorParametro)
