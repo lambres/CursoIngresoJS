@@ -17,10 +17,11 @@ function CalcularPrecio ()
     let CantLamparas;
     let marca;
     let descuento;
+    let unitarioConDescuento;
     let neto;
     let bruto;
     let impuesto;
-    const precio = 35;
+    const PRECIO = 35;
     descuento = 0
     CantLamparas = parseInt(document.getElementById("txtIdCantidad").value);
     marca = document.getElementById("Marca").value;
@@ -43,12 +44,16 @@ function CalcularPrecio ()
         descuento = 5;
     }
 
-    neto = CantLamparas * precio - CantLamparas * precio * descuento / 100;
+    unitarioConDescuento = PRECIO - PRECIO * descuento / 100;
+    document.getElementById("txtIdprecioDescuento").value = "Precio unitario neto con descuento " + unitarioConDescuento.toFixed(2);
+    neto = unitarioConDescuento * CantLamparas;
     if (neto >= 120){
         impuesto = neto * 10 / 100;
         bruto = neto + impuesto;
-        document.getElementById("txtIdprecioDescuento").value = `Usted pago ${impuesto} de IIBB., total a abonar ${bruto.toFixed(2)}`;
+        alert(`Usted pago ${impuesto} de IIBB., total a abonar ${bruto.toFixed(2)}`);
+        //document.getElementById("txtIdprecioDescuento").value = `Usted pago ${impuesto} de IIBB., total a abonar ${bruto.toFixed(2)}`;
     }else{
-        document.getElementById("txtIdprecioDescuento").value = neto.toFixed(2);
+        alert(`total a abonar ${neto.toFixed(2)}`);
+        //document.getElementById("txtIdprecioDescuento").value = neto.toFixed(2);
     }
 }

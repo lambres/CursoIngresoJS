@@ -26,37 +26,29 @@ function mostrar()
 		case "Invierno":
 			if (destino == "Bariloche"){
 				preciofinal = precio * 1.2;
-				alert(`En ${estacion} a ${destino} el viaje cuesta ${preciofinal}`);
 			}else if (destino == "Cataratas" || destino == "Cordoba"){
 				preciofinal = precio * 0.9;
-				alert(`En ${estacion} a ${destino} el viaje cuesta ${preciofinal}`);
 			}else if (destino == "Mar del plata"){
 				preciofinal = precio * 0.8;
-				alert(`En ${estacion} a ${destino} el viaje cuesta ${preciofinal}`);
 			}
 			break;
 		case "Verano":
 			if (destino == "Bariloche"){
 				preciofinal = precio * 0.8;
-				alert(`En ${estacion} a ${destino} el viaje cuesta ${preciofinal}`);
 			}else if (destino == "Cataratas" || destino == "Cordoba"){
 				preciofinal = precio * 1.1;
-				alert(`En ${estacion} a ${destino} el viaje cuesta ${preciofinal}`);
 			}else if (destino == "Mar del plata"){
 				preciofinal = precio * 1.2;
-				alert(`En ${estacion} a ${destino} el viaje cuesta ${preciofinal}`);
 			}
 			break;
 		case "Otoño":
 		case "Primavera":
 			if (destino == "Bariloche" || destino == "Cataratas" || destino == "Mar del plata"){
 				preciofinal = precio * 1.1;
-				alert(`En ${estacion} a ${destino} el viaje cuesta ${preciofinal}`);
 			}else if (destino == "Cordoba"){
 				preciofinal = precio;
-				alert(`En ${estacion} a ${destino} el viaje cuesta ${preciofinal}`);
 			}
 			break;	
 	}
-
+	alert(`En ${estacion} a ${destino} el viaje cuesta ${preciofinal}`);
 }//FIN DE LA FUNCIÓN
