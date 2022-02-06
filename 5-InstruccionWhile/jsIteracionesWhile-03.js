@@ -4,5 +4,8 @@ function mostrar()
 {
 	var claveIngresada;
 	claveIngresada = prompt("ingrese el número clave.");
+	while (claveIngresada != "utn750"){
+		console.log("Contraseña Inválida");
+	}
 	
 }//FIN DE LA FUNCIÓN
