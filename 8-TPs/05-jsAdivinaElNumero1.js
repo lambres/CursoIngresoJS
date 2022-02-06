@@ -20,12 +20,16 @@ function comenzar()
 	numeroSecreto = Math.round((Math.random() * (maximo - minimo) + minimo)); 
 		//alert(numeroSecreto );
 	contadorIntentos=0
+  document.getElementById("txtIdIntentos").value =""
+  document.getElementById("txtIdNumero").value =""
+  
 
 }
 
 function verificar()
 {
 	let nroIngreado;
+  contadorIntentos += 1;
   nroIngreado = parseInt(document.getElementById("txtIdNumero").value);
   console.debug ("nroIngresado " + nroIngreado + " / numeroSecreto " + numeroSecreto);
   if (nroIngreado < numeroSecreto){
@@ -35,6 +39,6 @@ function verificar()
   }else{
       document.getElementById("txtIdIntentos").value = "se pasó…";
   }
-  contadorIntentos += 1;
+  
 	
 }
