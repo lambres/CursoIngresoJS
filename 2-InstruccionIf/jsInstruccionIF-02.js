@@ -1,5 +1,10 @@
 function mostrar()
 {
+	/*
+	Ruben Dario Zevallos Lambrescht
+	División K
+	Ejercicio 2 IF
+*/
 	//Defino varfiable
 	let edad;
 	//tomo la edad  

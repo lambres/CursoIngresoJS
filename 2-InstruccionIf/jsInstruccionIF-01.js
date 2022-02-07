@@ -9,7 +9,9 @@ function mostrar()
 
 	Si uso === compara el valor y tipo de datos
 	!== comparo el valor y tipo de dato
-
+Ruben Dario Zevallos Lambrescht
+División K
+Ejercicio 1 IF
 	*/
 
 

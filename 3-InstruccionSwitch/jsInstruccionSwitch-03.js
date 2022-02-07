@@ -1,4 +1,9 @@
 function mostrar()
+/*
+Ruben Dario Zevallos Lambrescht
+División K
+Ejercicio 3 Switch
+*/
 {
 	//tomo el mes
 	let mesDelAno;

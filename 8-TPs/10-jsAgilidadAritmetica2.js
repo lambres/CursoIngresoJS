@@ -1,8 +1,12 @@
 /*Además de lo anterior, ahora 
 se agregara un temporizador que
- a los cinco segundos dará por terminado 
- el juego  de no ser ingresado el resultado 
- correcto en ese lapso de tiempo. */
+a los cinco segundos dará por terminado 
+el juego  de no ser ingresado el resultado 
+correcto en ese lapso de tiempo. 
+Ruben Dario Zevallos Lambrescht
+División K
+Ejercicio TP Agilidad Aritmetica 2
+ */
 var respuesta;
 var temporizador;
 function comenzar()

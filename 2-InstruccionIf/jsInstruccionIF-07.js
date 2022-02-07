@@ -1,4 +1,9 @@
 function mostrar()
+/*
+Ruben Dario Zevallos Lambrescht
+División K
+Ejercicio 7 IF
+*/
 {
 	//defino dos variables, una para la edad y otra para el estado civil
 	let edad;

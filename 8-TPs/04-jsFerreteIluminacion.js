@@ -9,7 +9,9 @@ descuento del 10 % y si es de otra marca un 5%.
 E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de ingresos brutos en informar del impuesto 
 con el siguiente mensaje:
  ”Usted pago X de IIBB.”, siendo X el impuesto que se pagó. 
-
+Ruben Dario Zevallos Lambrescht
+División K
+Ejercicio TP Ferreteria Iluminación
  */
 function CalcularPrecio () 
 {

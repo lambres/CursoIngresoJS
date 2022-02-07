@@ -42,11 +42,10 @@ function Circulo() {
     let radio;
     let perimetro;
     let cantidadtotal;
-    const pi = 3.14;
     //tomo los valores del campo en el formulrio html
     radio = parseFloat(document.getElementById("txtIdRadio").value);
     //calculo el perimetro
-    perimetro = 2 * radio * pi;
+    perimetro = 2 * radio * Math.PI;
     //calculo el lotal de alambre a comprar
     cantidadtotal = perimetro * 3;
     //muestro la cantidad de alambre a comprar

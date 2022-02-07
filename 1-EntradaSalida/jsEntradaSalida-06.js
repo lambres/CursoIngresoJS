@@ -1,7 +1,11 @@
 /*
 Debemos lograr tomar Los numeros por ID ,
 transformarlos a enteros (parseInt) y Sumarlos.
-mostrar el resulto por medio de "ALERT"*/
+mostrar el resulto por medio de "ALERT"
+Ruben Dario Zevallos Lambrescht
+División K
+Ejercicio 6 Entrada Salida
+*/
 function sumar() {
 	//declaro tres variables, una para cada sumando y una para el resultado
 	let sumando1;

@@ -1,6 +1,9 @@
 /* 
 Debemos lograr tomar un dato por 'PROMPT' 
 y lo muestro por 'ID' al presionar el botón 'mostrar'
+Ruben Dario Zevallos Lambrescht
+División K
+Ejercicio 4 Entrada Salida
 */
 function mostrar() {
 	//Declarar variable

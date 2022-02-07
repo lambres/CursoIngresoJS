@@ -5,6 +5,10 @@ C.	ingresar tres precios de productos  y mostrar precio final (más IVA 21%).
 */
 function Sumar () 
 {
+    /*Ruben Dario Zevallos Lambrescht
+    División K
+    Ejercicio TP Ferreteria A
+    */
     //defino 4 variables, una para cada precio y una para el resultado
 	let importe1;
     let importe2;
@@ -21,6 +25,11 @@ function Sumar ()
 }
 function Promedio () 
 {
+    /*
+    Ruben Dario Zevallos Lambrescht
+    División K
+    Ejercicio TP Ferreteria B
+    */
     //defino 4 variables, una para cada precio y una para el resultado
 	let importe1;
     let importe2;
@@ -38,6 +47,11 @@ function Promedio ()
 }
 function PrecioFinal () 
 {
+    /*
+    Ruben Dario Zevallos Lambrescht
+    División K
+    Ejercicio TP Ferreteria C
+    */
     //defino 6 variables, una para cada precio, una para el neto de los articulos,
     //una para el impuesto del IVA y una para el precio bruto
 	let importe1;

@@ -13,7 +13,12 @@ var contadorIntentos;
 
 function comenzar()
 {
-	//Genero el número RANDOM entre 1 y 100
+  /*
+  Ruben Dario Zevallos Lambrescht
+  División K
+  Ejercicio TP Adivina el numero 1 - A
+  */
+  //Genero el número RANDOM entre 1 y 100
   let maximo = 100;
 	let minimo= 1;
 
@@ -28,6 +33,11 @@ function comenzar()
 
 function verificar()
 {
+  /*
+  Ruben Dario Zevallos Lambrescht
+  División K
+  Ejercicio TP Adivina el numero 1 - B
+  */
 	let nroIngreado;
   contadorIntentos += 1;
   nroIngreado = parseInt(document.getElementById("txtIdNumero").value);

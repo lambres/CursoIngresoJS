@@ -1,5 +1,9 @@
 /*
-al presionar el botón pedir la CLAVE (ayuda: es utn750)*/
+al presionar el botón pedir la CLAVE (ayuda: es utn750)
+Ruben Dario Zevallos Lambrescht
+División K
+Ejercicio While 3
+*/
 function mostrar()
 {
 	var claveIngresada;

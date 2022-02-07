@@ -10,6 +10,9 @@ en Verano: Se viaja a Mar del plata y Cataratas solamente
 en Otoño: Se viaja a todos los destinos.
 
 primavera: solo no se viaja a Bariloche
+Ruben Dario Zevallos Lambrescht
+División K
+Ejercicio 10 Switch
 */
 
 function mostrar()

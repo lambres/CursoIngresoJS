@@ -1,3 +1,8 @@
+/*
+Ruben Dario Zevallos Lambrescht
+División K
+Ejercicio TP Piedra Papel Tijera 2
+*/
 var eleccionMaquina;
 var ContadorDeEmpates=0;
 var ContadorDeGanadas=0;

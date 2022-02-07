@@ -5,6 +5,9 @@ y una de las cuatro operaciones básicas (suma, resta,
  En el cuadro de texto resultado el jugador debe ingresar
  el resultado de la operación y presionar el botón Aceptar.
 se debe informar si el resultado es el correcto o no.
+Ruben Dario Zevallos Lambrescht
+División K
+Ejercicio TP Agilidad aritmética 1
 */
 var respuesta;
 function comenzar()

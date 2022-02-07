@@ -7,7 +7,11 @@
 4° intento: “Excelente técnica”.
 5° intento: “usted está en la media”.
 Desde  6 Intentos hasta 10:”falta técnica”
-Más de 10 intentos: “afortunado en el amor!!”.*/
+Más de 10 intentos: “afortunado en el amor!!”.
+Ruben Dario Zevallos Lambrescht
+División K
+Ejercicio TP Adivina el numero 2
+*/
 
 var numeroSecreto;
 var contadorIntentos;

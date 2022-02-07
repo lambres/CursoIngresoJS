@@ -1,6 +1,10 @@
 /*
 Debemos lograr tomar nombre y edad por ID y mostrarlos concatenados 
-ej.: "Usted se llama José y tiene 66 años" 	*/
+ej.: "Usted se llama José y tiene 66 años" 
+Ruben Dario Zevallos Lambrescht
+División K
+Ejercicio 5 Enrada Salida
+	*/
 function mostrar() {
 	// declaro dos variables, una para el nombre y otra para la edad
 	let nombre;

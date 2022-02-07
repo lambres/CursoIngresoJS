@@ -1,6 +1,10 @@
 /*
 Al presionar el botón pedir un sexo
-'f' para femenino, 'm' para masculino.*/
+'f' para femenino, 'm' para masculino.
+Ruben Dario Zevallos Lambrescht
+División K
+Ejercicio While 5
+*/
 function mostrar()
 {
 	var sexoIngresado;
