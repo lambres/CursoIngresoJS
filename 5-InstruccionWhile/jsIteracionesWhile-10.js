@@ -9,7 +9,11 @@ hasta que el usuario quiera, mostrar:
 6-Cantidad de números pares.
 7-Promedio de positivos.
 8-Promedios de negativos.
-9-Diferencia entre positivos y negativos, (positvos-negativos). */
+9-Diferencia entre positivos y negativos, (positvos-negativos). 
+Ruben Darío Zevallos Lambrescht
+División K
+Ejercicio 10 While
+*/
 function mostrar()
 {
 	//declarar contadores y variables 
