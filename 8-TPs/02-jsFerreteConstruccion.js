@@ -66,9 +66,9 @@ function Materiales() {
     //tomo los valores del campo en el formulrio html
     largo = parseFloat(document.getElementById("txtIdLargo").value);
     ancho = parseFloat(document.getElementById("txtIdAncho").value);
-    //calculo la suoerficie
+    //calculo la superficie
     superficie = largo * ancho;
-    //calculo el lotal de materiles a comprar
+    //calculo el lotal de materiales a comprar
     totalCemento = superficie * 2;
     totalCal = superficie * 3;
     //muestro la cantidad de materiales a comprar

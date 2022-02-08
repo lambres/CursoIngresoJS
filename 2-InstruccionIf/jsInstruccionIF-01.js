@@ -1,21 +1,15 @@
 function mostrar()
 {
-
-
-	/*if (true){
-		alert("Estoy dentro del if");
-	}
-	alert ("Estoy fuera del if")
-
-	Si uso === compara el valor y tipo de datos
-	!== comparo el valor y tipo de dato
+/*if (true){
+alert("Estoy dentro del if");
+}
+alert ("Estoy fuera del if")
+Si uso === compara el valor y tipo de datos
+!== comparo el valor y tipo de dato
 Ruben Dario Zevallos Lambrescht
 División K
 Ejercicio 1 IF
-	*/
-
-
-
+*/
 	//Defino varfiable
 	let edad;
 	//tomo la edad  
