@@ -11,7 +11,7 @@ con el siguiente mensaje:
  ”Usted pago X de IIBB.”, siendo X el impuesto que se pagó. 
 Ruben Dario Zevallos Lambrescht
 División K
-Ejercicio TP Ferreteria Iluminación Parte E
+Ejercicio TP Ferreteria Iluminación Parte C
  */
 function CalcularPrecio() {
     //declaro variable para capturar los valores del formulario html
@@ -19,7 +19,6 @@ function CalcularPrecio() {
     let marca;
     let precioVta;
     let precioDto;
-    let impuesto;
 
     const PRECIO = 35;
 
@@ -35,38 +34,19 @@ function CalcularPrecio() {
             } else {
                 precioDto = PRECIO - PRECIO * 30 / 100;
             }
-        } else {
-            if (cantLamparas == 4) {
-                if (marca == "ArgentinaLuz" || marca == "FelipeLamparas") {
+        }else{
+            if (cantLamparas == 4){
+                if (marca == "ArgentinaLuz" || marca == "FelipeLamparas"){
                     precioDto = PRECIO - PRECIO * 25 / 100;
-                } else {
+                }else{
                     precioDto = PRECIO - PRECIO * 20 / 100;
                 }
-            } else {
-                if (cantLamparas == 3) {
-                    if (marca == "ArgentinaLuz") {
-                        precioDto = PRECIO - PRECIO * 15 / 100;
-                    } else {
-                        if (marca == "FelipeLamparas") {
-                            precioDto = PRECIO - PRECIO * 10 / 100;
-                        } else {
-                            precioDto = PRECIO - PRECIO * 5 / 100;
-                        }
-                    }
-                }else{
-                    if (cantLamparas<3){
-                        precioDto = PRECIO
-                    }
-                }
+            }else{
+                precioDto = PRECIO;
             }
         }
+        
     }
     precioVta = cantLamparas * precioDto;
-    if (precioVta > 120){
-        impuesto = precioVta * 10 / 100;
-        precioVta = precioVta + impuesto;
-        document.getElementById("txtIdprecioDescuento").value = "Usted pago "+ impuesto.toFixed(2) + " de IIBB. Total a abonar: " + precioVta.toFixed(2);
-    }else{
-        document.getElementById("txtIdprecioDescuento").value = precioVta.toFixed(2);
-    }
+    document.getElementById("txtIdprecioDescuento").value = precioVta.toFixed(2);
 }
