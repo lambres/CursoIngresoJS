@@ -23,7 +23,7 @@ function mostrarAumento() {
 	//muestro el resultado en el cuadro de texto de la pagina html
 	document.getElementById("txtIdResultado").value = NuevoImporte;
 
-
+}
 	/*
 	RESUMEN
 	ENTRADA
@@ -45,4 +45,3 @@ function mostrarAumento() {
 	parseInt(string) o parseFloat(string)
 	para el caso de las restantes operaciones matematicas convierte automaticamente a numero los valores
 	*/
-}
