@@ -14,7 +14,7 @@ División K
 Ejercicio TP Ferreteria Iluminación Parte B
  */
 function CalcularPrecio() {
-    //declaro variable para capturar los valores del formulario html
+    /*declaro variable para capturar los valores del formulario html
     let cantLamparas;
     let marca;
     let precioVta;
@@ -41,4 +41,58 @@ function CalcularPrecio() {
     }
     precioVta = cantLamparas * precioDto;
     document.getElementById("txtIdprecioDescuento").value = precioVta.toFixed(2);
+    Presentado x mi
+    */
+    let cantidadDeLamparas;
+    let marca;
+    let descuentoCalculado;
+    let PrecioLampara;
+    let preciocondescuento;
+    let PrecioBruto;
+    let porcentaje;
+    let impuesto;
+    let precioFinal;
+
+    cantidadDeLamparas = document.getElementById("txtIdCantidad").value;
+    cantidadDeLamparas = parseInt(cantidadDeLamparas);
+
+    marca = document.getElementById("Marca").value;
+
+    PrecioLampara = 35;
+    porcentaje = 0;
+    PrecioBruto = cantidadDeLamparas * PrecioLampara;
+   
+ 
+    
+    if(cantidadDeLamparas > 5)//A.	Si compra 6 o más  lamparitas bajo consumo tiene un descuento del 50%. 
+    {
+        porcentaje = 50;
+    }
+    else
+    {
+        if(cantidadDeLamparas==5)//B.	Si compra 5  lamparitas bajo consumo marca "ArgentinaLuz" se hace un descuento del 40 % y si es de otra marca el descuento es del 30%.
+        {
+            if(marca=="ArgentinaLuz")
+            {
+                porcentaje = 40;
+            }
+            else
+            {
+                porcentaje = 30;
+            }
+        }
+        else
+        {
+
+        }
+    }
+    
+    descuentoCalculado = PrecioBruto * porcentaje / 100;
+    precioFinal = PrecioBruto - descuentoCalculado;
+    document.getElementById("txtIdprecioDescuento").value = precioFinal;
+  
+
 }
+
+            
+

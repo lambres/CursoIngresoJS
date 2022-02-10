@@ -14,12 +14,40 @@ División K
 Ejercicio TP Ferreteria Iluminación Parte A
  */
 function CalcularPrecio() {
-    //declaro variable para capturar los valores del formulario html
+    /*declaro variable para capturar los valores del formulario html
     let CantLamparas;
     const PRECIO = 35;
     CantLamparas = parseInt(document.getElementById("txtIdCantidad").value);
     if (CantLamparas >= 6) {
         document.getElementById("txtIdprecioDescuento").value = CantLamparas * PRECIO * .5;
     }
+    */
+    let cantidadDeLamparas;
+    let marca;
+    let descuentoCalculado;
+    let PrecioLampara;
+    let preciocondescuento;
+    let PrecioBruto;
+    let porcentaje;
+    let impuesto;
+
+    cantidadDeLamparas = document.getElementById("txtIdCantidad").value;
+    cantidadDeLamparas = parseInt(cantidadDeLamparas);
+
+    marca = document.getElementById("Marca").value;
+
+    PrecioLampara = 35;
+    porcentaje = 0;
+    PrecioBruto = cantidadDeLamparas * PrecioLampara;
+
+
+
+    if (cantidadDeLamparas > 5) {
+        porcentaje = 50;
+    }
+    descuentoCalculado = PrecioBruto * porcentaje / 100;
+    precioFinal = PrecioBruto - descuentoCalculado;
+    document.getElementById("txtIdprecioDescuento").value = precioFinal;
+
 
 }
