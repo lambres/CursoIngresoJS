@@ -14,12 +14,13 @@ function mostrar() {
 	respuesta = 'S'.toLowerCase();
 	contador = 0;
 	acumulador = 0;
-	console.log(respuesta);
+	//console.log(respuesta);
 	while (respuesta == 's') {
-		acumulador += parseInt(prompt("Ingrese un número:"));
+		acumulador += prompt("Ingrese un número:");
+		acumulador = parseInt(acumulador);
 		contador ++ ;
 		respuesta = prompt("¿Desea continuar (s/n)?").toLowerCase();
-		console.log(respuesta.toLowerCase());
+		//console.log(respuesta.toLowerCase());
 	}
 	document.getElementById("txtIdSuma").value = acumulador;
 	document.getElementById("txtIdPromedio").value = acumulador / contador;

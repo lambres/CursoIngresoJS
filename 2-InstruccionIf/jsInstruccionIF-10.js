@@ -16,11 +16,17 @@ function mostrar()
 	let maximo = 10;
 	let minimo= 1;
 	nota = Math.round((Math.random() * (maximo - minimo) + minimo));
-	if (nota >= 9){
-		alert(nota + " EXCELENTE");
-	}else if(nota >= 4){
-		alert(nota + " APROBÓ");
-	}else{
-		alert(nota + " Vamos, la proxima se puede")
+	let mensaje;
+	if (nota >= 9)
+	{
+		mensaje = nota + " EXCELENTE";
+	}else if(nota >= 4)
+	{
+		mensaje = nota + " APROBÓ";
 	}
+	else
+	{
+		mensaje = nota + " Vamos, la proxima se puede";
+	}
+	alert (mensaje);
 }//FIN DE LA FUNCIÓN

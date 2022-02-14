@@ -5,14 +5,13 @@ Zevallos Lambrescht Ruben Darío
 División K
 ejercicio 2 while
 */
-function mostrar()
-{
+function mostrar() {
 	var contador;
-	contador=10;
-	while ( contador >=1){
+	contador = 10;
+	while (contador >= 1) {
 		alert(contador);
-		contador --;
-	} 
-	
+		contador--;
+	}
+
 
 }//FIN DE LA FUNCIÓN

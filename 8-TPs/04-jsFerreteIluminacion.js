@@ -33,11 +33,9 @@ con el siguiente mensaje:
     if (cantidadLamparas >= 6)
     {
         descuento = 50;
-    }
-    else
-        /*B.	Si compra 5  lamparitas bajo consumo marca "ArgentinaLuz" se hace
+    }/*B.	Si compra 5  lamparitas bajo consumo marca "ArgentinaLuz" se hace
          un descuento del 40 % y si es de otra marca el descuento es del 30%.*/
-        if (cantidadLamparas == 5)
+    else if (cantidadLamparas == 5)
         {
             if (marca == "ArgentinaLuz")
             {
@@ -48,12 +46,12 @@ con el siguiente mensaje:
                 descuento = 30;
             }
         }
-        else
         /*C.	Si compra 4  lamparitas bajo consumo marca "ArgentinaLuz" o
          “FelipeLamparas” se hace un descuento del 25 % y si es de otra marca 
          el descuento es del 20%.
          */
-            if (cantidadLamparas == 4)
+        
+        else if (cantidadLamparas == 4)
             {
                 if (marca == "ArgentinaLuz" || marca == "FelipeLamparas")
                     {
@@ -64,33 +62,40 @@ con el siguiente mensaje:
                         descuento = 20;
                     }
             }
-            else
-                /*D.	Si compra 3  lamparitas bajo consumo marca "ArgentinaLuz"  
+            /*D.	Si compra 3  lamparitas bajo consumo marca "ArgentinaLuz"  
                 el descuento es del 15%, si es  “FelipeLamparas” se hace un 
                 descuento del 10 % y si es de otra marca un 5%.*/    
-                if (cantidadLamparas == 3)
+        else if (cantidadLamparas == 3)
+            {
+                if (marca == "ArgentinaLuz")
                 {
-                    if (marca == "ArgentinaLuz")
-                    {
-                        descuento = 15;
-                    }
-                    else
-                        if (marca = "FelipeÑamparas")
-                        {
-                            descuento = 10
-                        }
-                        else
-                        {
-                            descuento = 5;
-                        }
+                    descuento = 15;
+                }
+                else if (marca == "FelipeLamparas")
+                {
+                    descuento = 10
                 }
                 else
-    {
-        descuento = 0;
-    }
+                {
+                    descuento = 5;
+                }
+            }
+        else
+        {
+            descuento = 0;
+        }
 
     precioUnitario = PRECIO - PRECIO * descuento / 100;
     importeNeto = cantidadLamparas * precioUnitario; 
 
-    document.getElementById("txtIdprecioDescuento").value = importeNeto;
+    if(importeNeto > 120)
+    {
+        IIBB = importeNeto * 10 / 100;
+        alert("Usted pago "+ IIBB+" de Ingresos Brutos.");
+        importeBruto = importeNeto + IIBB;
+    }
+
+    document.getElementById("txtIdprecioDescuento").value = importeBruto;
 }
+
+s

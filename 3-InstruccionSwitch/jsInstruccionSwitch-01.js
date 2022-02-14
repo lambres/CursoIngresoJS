@@ -3,31 +3,28 @@ function mostrar()
 Ruben Dario Zevallos Lambrescht
 División K
 Ejercicio 1 Switch
-*/
-{
+*/ {
 
 	//tomo el mes
-	let mesDelAno;
+	let mesDelAnio;
+	let mensaje;
 	//Guardo el valor seleccionado en el forulario html
-	mesDelAno = document.getElementById("txtIdMes").value;
+	mesDelAnio = document.getElementById("txtIdMes").value;
 	//estructura switch
 
-	switch(mesDelAno){
+	switch (mesDelAnio) {
 		case "Enero":
-			alert("que comiences bien el año!!!");
+			mensaje = "que comiences bien el año!!!";
 			break;
 		case "Marzo":
-			alert("a clases!!!.");
+			mensaje = "a clases!!!.";
 			break;
 		case "Julio":
-			alert ("se vienen las vacaciones!!!.");
+			mensaje = "se vienen las vacaciones!!!.";
 			break;
 		case "Diciembre":
-			alert("Felices fiesta!!!.");
+			mensaje = "Felices fiesta!!!.";
 			break;
 	}
-	
-
-
-
+	alert(mensaje);
 }//FIN DE LA FUNCIÓN

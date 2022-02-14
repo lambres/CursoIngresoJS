@@ -3,11 +3,11 @@ function mostrar()
 Ruben Dario Zevallos Lambrescht
 División K
 Ejercicio 4 Switch
-*/
-{
+*/ {
 	let mes;
+	let mensaje;
 	mes = document.getElementById("txtIdMes").value;
-	switch(mes){
+	switch (mes) {
 		case "Enero":
 		case "Marzo":
 		case "Mayo":
@@ -15,17 +15,13 @@ Ejercicio 4 Switch
 		case "Agosto":
 		case "Octubre":
 		case "Diciembre":
-			alert (`${mes} tiene 31 días.`);
+			mensaje = `${mes} tiene 31 días.`;
 			break;
 		case "Febrero":
-			alert (`${mes} tiene 28 días.`);
+			mensaje = `${mes} tiene 28 días.`;
 			break;
 		default:
-			alert (`${mes} tiene 30 días.`)
+			mensaje = `${mes} tiene 30 días.`;
 	}
-	
-	
-
-
-
+	alert(mensaje);
 }//FIN DE LA FUNCIÓN

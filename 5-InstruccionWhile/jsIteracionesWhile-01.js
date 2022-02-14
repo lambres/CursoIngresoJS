@@ -10,7 +10,7 @@ function mostrar()
 {
 	let i = 0;
 	while(i < 10){
-		alert(i+1);
 		i ++;
+		alert(i);
 	}
 }//FIN DE LA FUNCIÓN

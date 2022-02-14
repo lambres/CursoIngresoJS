@@ -13,19 +13,24 @@ function mostrar() {
 	let multiplicacionNegativos = 1;
 	contador = false;
 	do {
-		numero = parseInt(prompt("Ingrese un número:"));
-		if (numero >= 0) {
+		numero = prompt("Ingrese un número:");
+		numero = parseInt(numero);
+		if (numero >= 0) 
+		{
 			sumaPositivos += numero;
-		} else {
+		} 
+		else 
+		{
 			contador = true;
 			multiplicacionNegativos *= numero;
 		}
 		respuesta = prompt("Desea agregar otro número (s/n):").toLowerCase();
 	} while (respuesta == 's');
 	document.getElementById("txtIdSuma").value = sumaPositivos;
-	if (contador == false){
+	if (contador == false) 
+	{
 		multiplicacionNegativos = 0;
 	}
-		document.getElementById("txtIdProducto").value = multiplicacionNegativos;
-	
+	document.getElementById("txtIdProducto").value = multiplicacionNegativos;
+
 }//FIN DE LA FUNCIÓN
