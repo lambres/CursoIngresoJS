@@ -1,5 +1,11 @@
 function mostrar()
 /*
+Enunciado:
+al seleccionar un mes informar.
+si es Enero: "que comiences bien el año!!!."
+si es Marzo: "a clases!!!."
+si es Julio: "se vienen las vacaciones!!!."
+si es Diciembre: "Felices fiesta!!!."
 Ruben Dario Zevallos Lambrescht
 División K
 Ejercicio 1 Switch
@@ -12,7 +18,8 @@ Ejercicio 1 Switch
 	mesDelAnio = document.getElementById("txtIdMes").value;
 	//estructura switch
 
-	switch (mesDelAnio) {
+	switch (mesDelAnio)
+	{
 		case "Enero":
 			mensaje = "que comiences bien el año!!!";
 			break;
@@ -26,5 +33,9 @@ Ejercicio 1 Switch
 			mensaje = "Felices fiesta!!!.";
 			break;
 	}
-	alert(mensaje);
+	
+	if (mensaje != "")
+	{
+		alert(mensaje);
+	}
 }//FIN DE LA FUNCIÓN

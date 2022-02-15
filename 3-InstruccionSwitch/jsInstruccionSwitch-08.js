@@ -7,14 +7,16 @@ Ejercicio 8 Switch
 
 {
 	let destino;
+	let mensaje;
 	destino = document.getElementById("txtIdDestino").value;
 	switch (destino){
 		case "Bariloche":
 		case "Ushuaia":
-			alert("Hace Frio");
+			mensaje = "Hace Frio";
 			break;
 		default:
-			alert("Hace calor");
+			mensaje = "Hace calor";
 			break;
 	}
+	alert(mensaje);
 }//FIN DE LA FUNCIÓN

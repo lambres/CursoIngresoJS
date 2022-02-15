@@ -7,19 +7,22 @@ Ejercicio 7 Switch
 {
 	
 	let destino;
+	let mensaje;
 	destino = document.getElementById("txtIdDestino").value;
-	switch (destino){
+	switch (destino)
+	{
 		case "Bariloche":
-			alert("Se encuentra en el Oeste");
+			mensaje="Se encuentra en el Oeste";
 			break;
 		case "Cataratas":
-			alert("Se encuentra en el Norte");
+			mensaje="Se encuentra en el Norte";
 			break;
 		case "Mar del plata":
-			alert("Se encuentra en el Este");
+			mensaje="Se encuentra en el Este";
 			break;
 		case "Ushuaia":
-			alert("Se encuentra en el Sur");
+			mensaje="Se encuentra en el Sur";
 			break;
 	}
+	alert(mensaje);
 }//FIN DE LA FUNCIÓN

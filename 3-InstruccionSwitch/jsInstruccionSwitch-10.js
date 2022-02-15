@@ -20,18 +20,22 @@ function mostrar()
 	let estacion;
 	let destino;
 	let SeViaja;
-	SeViaja=false;
+	let mensaje;
+	SeViaja = false;
 	estacion = document.getElementById("txtIdEstacion").value;
 	destino = document.getElementById("txtIdDestino").value;
 
-	switch(estacion){
+	switch(estacion)
+	{
 		case "Invierno":
-			if (destino == "Bariloche"){
+			if (destino == "Bariloche")
+			{
 				SeViaja = true;
 			}
 			break;
 		case "Verano":
-			if (destino == "Mar del plata" || destino == "Cataratas"){
+			if (destino == "Mar del plata" || destino == "Cataratas")
+			{
 				SeViaja = true;
 			}
 			break;
@@ -39,16 +43,19 @@ function mostrar()
 			SeViaja = true;
 			break;
 		case "Primavera":
-			if (destino != "Bariloche"){
+			if (destino != "Bariloche")
+			{
 				SeViaja = true;
 			}
 			break;
 	}
-	if (SeViaja){
-		alert("Se viaja a " + destino);
-	}else{
-		alert("No se viaja a " + destino)
+	if (SeViaja)
+	{
+		mensaje = "Se viaja a " + destino;
 	}
-
-
+	else
+	{
+		mensaje = "No se viaja a " + destino;
+	}
+	alert(mensaje);
 }//FIN DE LA FUNCIÓN

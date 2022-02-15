@@ -11,8 +11,9 @@ Ejercicio 3 Switch
 	//Guardo el valor seleccionado en el forulario html
 	mesDelAno = document.getElementById("txtIdMes").value;
 	//estructura switch
-	switch(mesDelAno){
-		case("Febrero"):
+	switch(mesDelAno)
+	{
+		case "Febrero":
 			mensaje = "Este mes no tiene mas de 29 días";
 			break;
 		default:

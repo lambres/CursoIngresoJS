@@ -16,7 +16,7 @@ function mostrar()
 		if (numero > maximo || primero) {
 			maximo = numero;
 		}
-		if (numero < minimo || primero){
+		else if (numero < minimo || primero){
 			minimo = numero;
 			primero = false;
 		}
