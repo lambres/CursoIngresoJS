@@ -19,62 +19,66 @@ function comenzar()
 }//FIN DE LA FUNCIÓN
 function piedra()
 {
-    switch(eleccionMaquina){
+    let mensaje;
+    switch(eleccionMaquina)
+    {
         case 1:
-            alert("Empató");
+            mensaje = "Empató";
 			ContadorDeEmpates += 1;
             break;
         case 2:
-            alert("Perdió");
+            mensaje = "Perdió";
 			ContadorDePerdidas += 1;
             break;
         case 3:
-            alert("Ganó");
+            mensaje = "Ganó";
 			ContadorDeGanadas += 1;
             break;
-
     }
+    alert(mensaje);
 	mostrarResultado();
 }//FIN DE LA FUNCIÓN
 
 function papel()
 {
-    switch(eleccionMaquina){
+    switch(eleccionMaquina)
+    {
         case 1:
-            alert("Ganó");
+            mensaje = "Ganó";
 			ContadorDeGanadas += 1;
             break;
         case 2:
-            alert("Empató");
+            mensaje = "Empató";
 			ContadorDeEmpates += 1;
             break;
         case 3:
-            alert("Perdió");
+            mensaje = "Perdió";
 			ContadorDePerdidas += 1;
             break;
-            
     }
+    alert(mensaje);
 	mostrarResultado();
 
 }//FIN DE LA FUNCIÓN
 
 function tijera()
 {
-    switch(eleccionMaquina){
+    switch(eleccionMaquina)
+    {
         case 1:
-            alert("Perdió");
+            mensaje = "Perdió";
 			ContadorDePerdidas += 1;
             break;
         case 2:
-            alert("Ganó");
+            mensaje = "Ganó";
 			ContadorDeGanadas += 1;
             break;
         case 3:
-            alert("Empató");
+            mensaje = "Empató";
 			ContadorDeEmpates += 1;
             break;
-            
     }
+    alert(mensaje);
 	mostrarResultado();
 
 }//FIN DE LA FUNCIÓN

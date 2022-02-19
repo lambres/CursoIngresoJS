@@ -13,6 +13,7 @@ function comenzar()
 {
     let minimo = 1;
     let maximo = 3;
+    
     eleccionMaquina = Math.round((Math.random() * (maximo - minimo) + minimo));
 
 
@@ -20,53 +21,59 @@ function comenzar()
 }//FIN DE LA FUNCIÓN
 function piedra()
 {
-    switch(eleccionMaquina){
+    let mensaje;
+    switch(eleccionMaquina)
+    {
         case 1:
-            alert("Empató");
+            mensaje = "Empató";
             break;
         case 2:
-            alert("Perdió");
+            mensaje = "Perdió";
             break;
         case 3:
-            alert("Ganó");
+            mensaje = "Ganó";
             break;
-            
     }
+    alert (mensaje);
 
 }//FIN DE LA FUNCIÓN
 
 function papel()
 {
-    switch(eleccionMaquina){
+    let mensaje;
+    switch(eleccionMaquina)
+    {
         case 1:
-            alert("Ganó");
+            mensaje = "Ganó";
             break;
         case 2:
-            alert("Empató");
+            mensaje = "Empató";
             break;
         case 3:
-            alert("Perdió");
+            mensaje = "Perdió";
             break;
-            
     }
+    alert(mensaje);
 
 
 }//FIN DE LA FUNCIÓN
 
 function tijera()
 {
-    switch(eleccionMaquina){
+    let mensaje;
+    switch(eleccionMaquina)
+    {
         case 1:
-            alert("Perdió");
+            mensaje = "Perdió";
             break;
         case 2:
-            alert("Ganó");
+            mensaje = "Ganó";
             break;
         case 3:
-            alert("Empató");
+            mensaje = "Empató";
             break;
             
     }
-
+    alert(mensaje);
 
 }//FIN DE LA FUNCIÓN

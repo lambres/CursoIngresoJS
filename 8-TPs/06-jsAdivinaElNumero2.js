@@ -32,43 +32,52 @@ function comenzar() {
 
 function verificar() {
 	let nroIngreado;
+	let mensaje;
 	contadorIntentos += 1;
-	nroIngreado = parseInt(document.getElementById("txtIdNumero").value);
-	console.debug("nroIngresado " + nroIngreado + " / numeroSecreto " + numeroSecreto);
-	if (nroIngreado < numeroSecreto) {
-		document.getElementById("txtIdIntentos").value = "Falta ....";
-	} else if (nroIngreado == numeroSecreto) {
-		switch (contadorIntentos) {
-			case 1:
-				document.getElementById("txtIdIntentos").value = "Usted es un Psiquico";
-				break;
-			case 2:
-				document.getElementById("txtIdIntentos").value = "Excelente Percepción";
-				break;
-			case 3:
-				document.getElementById("txtIdIntentos").value = "Esto es suerte";
-				break;
-			case 4:
-				document.getElementById("txtIdIntentos").value = "Excelente Técnica";
-				break;
-			case 5:
-				document.getElementById("txtIdIntentos").value = "Usted está en la media";
-				break;
-			case 6:
-			case 7:
-			case 8:
-			case 9:
-			case 10:
-				document.getElementById("txtIdIntentos").value = "Falta técnica";
-				break;
-			default:
-				document.getElementById("txtIdIntentos").value = "afortunado en el amor";
-				break;
-
+	nroIngreado = document.getElementById("txtIdNumero").value;
+	nroIngreado = parseInt(nroIngreado);
+	//console.debug("nroIngresado " + nroIngreado + " / numeroSecreto " + numeroSecreto);
+	if (nroIngreado < numeroSecreto) 
+	{
+		mensaje = "Falta ....";
+	} 
+	else
+	{
+		if (nroIngreado == numeroSecreto)
+		{
+			switch (contadorIntentos)
+			{
+				case 1:
+					mensaje = "Usted es un Psiquico";
+					break;
+				case 2:
+					mensaje = "Excelente Percepción";
+					break;
+				case 3:
+					mensaje = "Esto es suerte";
+					break;
+				case 4:
+					mensaje = "Excelente Técnica";
+					break;
+				case 5:
+					mensaje = "Usted está en la media";
+					break;
+				case 6:
+				case 7:
+				case 8:
+				case 9:
+				case 10:
+					mensaje = "Falta técnica";
+					break;
+				default:
+					mensaje = "afortunado en el amor";
+					break;
+			}
 		}
-	} else {
-		document.getElementById("txtIdIntentos").value = "se pasó…";
+		else
+		{
+			mensaje = "se pasó…";
+		}
 	}
-
-
+	document.getElementById("txtIdIntentos").value = mensaje;
 }

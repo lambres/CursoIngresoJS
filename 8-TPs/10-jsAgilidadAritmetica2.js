@@ -15,12 +15,15 @@ function comenzar()
     let numero2;
     let operacion;
     
-    let minimo = 1;
-    let maximo = 10;
+    let minimo;
+    let maximo;
+    minimo = 1;
+    maximo = 10;
     numero1 = Math.round((Math.random() * (maximo - minimo) + minimo));
     document.getElementById("txtIdPrimerNumero").value = numero1;
 	numero2 = Math.round((Math.random() * (maximo - minimo) + minimo));
     document.getElementById("txtIDSegundoNumero").value = numero2;
+    maximo = 4;
     operacion = Math.round((Math.random() * (4 - 1) + 1));
     
     switch (operacion){

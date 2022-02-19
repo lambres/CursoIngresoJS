@@ -16,8 +16,7 @@ function mostrar() {
 	acumulador = 0;
 	//console.log(respuesta);
 	while (respuesta == 's') {
-		acumulador += prompt("Ingrese un número:");
-		acumulador = parseInt(acumulador);
+		acumulador += parseInt(prompt("Ingrese un número:"));
 		contador ++ ;
 		respuesta = prompt("¿Desea continuar (s/n)?").toLowerCase();
 		//console.log(respuesta.toLowerCase());

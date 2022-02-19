@@ -27,29 +27,42 @@ function mostrar()
 
 	switch(estacion){
 		case "Invierno":
-			if (destino == "Bariloche"){
+			if (destino == "Bariloche")
+			{
 				preciofinal = precio * 1.2;
-			}else if (destino == "Cataratas" || destino == "Cordoba"){
-				preciofinal = precio * 0.9;
-			}else if (destino == "Mar del plata"){
+			}
+			else if (destino == "Mar del plata")
+			{
 				preciofinal = precio * 0.8;
+			}
+			else
+			{
+				preciofinal = precio * 0.9;
 			}
 			break;
 		case "Verano":
-			if (destino == "Bariloche"){
+			if (destino == "Bariloche")
+			{
 				preciofinal = precio * 0.8;
-			}else if (destino == "Cataratas" || destino == "Cordoba"){
-				preciofinal = precio * 1.1;
-			}else if (destino == "Mar del plata"){
+			}
+			else if (destino == "Mar del plata")
+			{
 				preciofinal = precio * 1.2;
+			}
+			else
+			{
+				preciofinal = precio * 1.1;
 			}
 			break;
 		case "Otoño":
 		case "Primavera":
-			if (destino == "Bariloche" || destino == "Cataratas" || destino == "Mar del plata"){
-				preciofinal = precio * 1.1;
-			}else if (destino == "Cordoba"){
-				preciofinal = precio;
+			if (destino == "Cordoba")
+			{
+				preciofinal = precio ;
+			}
+			else
+			{
+				preciofinal = precio* 1.1;
 			}
 			break;	
 	}
