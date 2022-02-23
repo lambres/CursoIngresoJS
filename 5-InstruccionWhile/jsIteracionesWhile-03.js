@@ -11,5 +11,6 @@ function mostrar()
 	while (claveIngresada != "utn750"){
 		console.log("Contraseña Inválida");
 	}
+	alert("Contraseña correcta, puede ingresar.")
 	
 }//FIN DE LA FUNCIÓN

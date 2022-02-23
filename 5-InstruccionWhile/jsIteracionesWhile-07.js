@@ -11,16 +11,16 @@ function mostrar() {
 	let contador;
 	let acumulador;
 	let respuesta;
-	respuesta = 'S'.toLowerCase();
+
 	contador = 0;
 	acumulador = 0;
 	//console.log(respuesta);
-	while (respuesta == 's') {
+	do {
 		acumulador += parseInt(prompt("Ingrese un número:"));
-		contador ++ ;
-		respuesta = prompt("¿Desea continuar (s/n)?").toLowerCase();
+		contador++;
+		respuesta = prompt("¿Desea continuar (s para continuar)?").toLowerCase();
 		//console.log(respuesta.toLowerCase());
-	}
+	} while (respuesta == 's');
 	document.getElementById("txtIdSuma").value = acumulador;
 	document.getElementById("txtIdPromedio").value = acumulador / contador;
 }//FIN DE LA FUNCIÓN

@@ -6,12 +6,14 @@ function mostrar() {
 	*/
 	var contador;
 	var acumulador;
+	
 	contador = 0;
 	acumulador = 0;
-	while (contador < 5) {
+	do 
+	{
 		acumulador += parseInt(prompt("Ingrese un número:"));
 		contador++;
-	}
+	}while (contador < 5);
 	document.getElementById("txtIdSuma").value = acumulador;
 	document.getElementById("txtIdPromedio").value = acumulador / 5;
 }//FIN DE LA FUNCIÓN
