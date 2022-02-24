@@ -11,7 +11,7 @@ F.	Nacionalidad, “A” para argentinos, “E” para extranjeros, “N” para
 
 Alumno Zevallos Lambrescht Rubén Darío
 División K
-Ejercicio TP12 IF
+Ejercicio TP12 While
 */
 function ComenzarIngreso() {
 	//definicion de variables
@@ -21,76 +21,48 @@ function ComenzarIngreso() {
 	let sueldoBruto;
 	let nroLegajo;
 	let nacionalidad;
-	
+
 	//A.	Edad, entre 18 y 90 años inclusive.
-	for(;;) 
+	do 
 	{
 		edad = prompt("Ingrese la edad (de 18 años a 90 años son válidos)");
 		edad = parseInt(edad);
-		if (edad > 17 && edad < 91)
-		{
-			break;
-		}
-	} 
+	} while (edad < 18 || edad > 90);
 	document.getElementById("txtIdEdad").value = edad;
 	
 	//B.	Sexo, “M” para masculino y “F” para femenino
-	for(;;)
-	{
+	do {
 		sexo = prompt('Ingrese el sexo ("M" "F" son válidos)');
 		sexo = sexo.toLowerCase();
-		if (sexo == "m" || sexo == "f")
-		{
-			break;
-		}
-	} 
+	} while (sexo != "m" && sexo != "f");
 	document.getElementById("txtIdSexo").value = sexo;
 	
 	//C.	Estado civil, 1-para soltero, 2-para casados, 3-para divorciados y 4-para viudos
-	for(;;)
-	{
+	do {
 		estadoCivil = prompt('Ingrese el esto civil (1=Soltero 2=Casado 3=Divorsiado 4=Viudo)');
 		estadoCivil = parseInt(estadoCivil);
-		if (estadoCivil > 0 && estadoCivil < 5)
-		{
-			break;
-		}
-	}
+	} while (estadoCivil < 1 && estadoCivil > 5);
 	document.getElementById("txtIdEstadoCivil").value = estadoCivil;
-	
 	//D.	Sueldo bruto, no menor a 8000.
-	for(;;)
-	{
+	do {
 		sueldoBruto = prompt('Ingrese el sueldo (Valor no menos a 8000)');
 		sueldoBruto = parseInt(sueldoBruto);
-		if (sueldoBruto > 7999)
-		{
-			break;
-		}
-	} 
+	} while (sueldoBruto < 8000);
 	document.getElementById("txtIdSueldo").value = sueldoBruto;
 	
 	//E.	Número de legajo, numérico de 4 cifras, sin ceros a la izquierda.
-	for(;;)
-	{
+	do {
 		nroLegajo = prompt('Ingrese el nro de Legajo (Valor de 4 dígitos)');
 		nroLegajo = parseInt(nroLegajo);
-		if(nroLegajo > 999 && nroLegajo < 10000)
-		{
-			break;
-		}
-	} 
+	} while (nroLegajo < 999 || nroLegajo > 10000);
 	document.getElementById("txtIdLegajo").value = nroLegajo;
 	
 	//F.	Nacionalidad, “A” para argentinos, “E” para extranjeros, “N” para nacionalizados.
-	for(;;) 
-	{
+	do {
 		nacionalidad = prompt('Ingrese Nacionalidad "A" Argentino "E" Extranjero "N" Nacionalizado');
 		nacionalidad = nacionalidad.toLowerCase();
-		if(nacionalidad == "a" || nacionalidad == "e" || nacionalidad == "n")
-		{
-			break;
-		}
-	}
+	} while (nacionalidad != "a" && nacionalidad != "e" && nacionalidad != "n");
 	document.getElementById("txtIdNacionalidad").value = nacionalidad;
+
+
 }
